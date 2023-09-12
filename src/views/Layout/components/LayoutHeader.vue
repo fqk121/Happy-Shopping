@@ -2,13 +2,14 @@
 // 使用Pinia中的数据
 import { useCategoryStore } from '@/stores/category'
 const categoryStore = useCategoryStore()
+import HeaderCart from './HeaderCart.vue'
 </script>
 
 <template>
   <header class="app-header">
     <div class="container">
       <h1 class="logo">
-        <RouterLink to="/">小兔鲜</RouterLink>
+        <RouterLink to="/">Happy购</RouterLink>
       </h1>
       <ul class="app-header-nav">
         <li class="home">
@@ -29,6 +30,7 @@ const categoryStore = useCategoryStore()
         <input type="text" placeholder="搜一搜" />
       </div>
       <!-- 头部购物车 -->
+      <HeaderCart></HeaderCart>
     </div>
   </header>
 </template>
@@ -136,3 +138,4 @@ const categoryStore = useCategoryStore()
   }
 }
 </style>
+@/stores/categoryStore

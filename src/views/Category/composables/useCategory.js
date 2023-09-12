@@ -3,7 +3,6 @@ import { onMounted, ref } from 'vue'
 import { getCategoryAPI } from '@/apis/category'
 import { useRoute } from 'vue-router'
 import { onBeforeRouteUpdate } from 'vue-router'
-
 export function useCategory () {
   // 获取分类数据
   const categoryData = ref({})

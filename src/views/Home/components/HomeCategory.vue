@@ -151,3 +151,4 @@ const CategoryStore = useCategoryStore()
   }
 }
 </style>
+@/stores/categoryStore

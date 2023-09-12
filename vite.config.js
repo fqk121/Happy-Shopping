@@ -5,7 +5,6 @@ import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -37,5 +36,8 @@ export default defineConfig({
         `,
       }
     }
-  }
+  },
+  publicPath: './',                // 主要是这行代码，配置打包后的资源路径
+  productionSourceMap: false,      // 打包的时候不输出map文件，减少大量体积
+
 })
